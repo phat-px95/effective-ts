@@ -4,3 +4,4 @@
 ### Function Expression using Type
 * Provide types for common callbacks
 * Use typeof fn to match the signature of another function - make use of TS features
+### Type and Interface
