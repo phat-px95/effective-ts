@@ -37,3 +37,23 @@ class StateI implements IState {
 	name: string = '';
 	capital: string = '';
 }
+
+// Differnces
+// Only Union Type
+type AorB = 'A' | 'B';
+const a: AorB = 'A';
+// Using tuple with type
+type PairNum = [number, number];
+// Declaration merging with Interface
+interface IUSState {
+	name: string;
+	capital: string;
+}
+interface IUSState {
+	population: number;
+}
+const wyoming: IUSState = {
+	name: 'Wyoming',
+	capital: 'Cheyenne',
+	population: 500_000
+};
