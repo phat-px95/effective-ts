@@ -5,4 +5,9 @@
 * Provide types for common callbacks
 * Use typeof fn to match the signature of another function - make use of TS features
 ### Interface
-* Declaration Merging - https://www.typescriptlang.org/docs/handbook/declaration-merging.html
+* [Declaration Merging](https://www.typescriptlang.org/docs/handbook/declaration-merging.html)
+### Utility Types
+* [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+* Pick, Partial, Record
+### Index Signature
+

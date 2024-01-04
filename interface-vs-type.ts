@@ -57,3 +57,41 @@ const wyoming: IUSState = {
 	capital: 'Cheyenne',
 	population: 500_000
 };
+
+// Type Union
+interface SaveAction {
+	type: 'save';
+}
+interface LoadAction {
+	type: 'load';
+}
+type Action = SaveAction | LoadAction;
+// type ActionType = Action['type'] = 'save' | 'load';
+
+// Get Type From Value
+const cat1 = {
+	height: 1.5,
+	color: 'READ'
+}
+type Cat = typeof cat1;
+
+// get Type from func return value
+const getDog = () => { return {weight: 1, color: 'Black'};}
+type Dog = ReturnType<typeof getDog>;
+
+// Index Signature
+// For truly dynamic data, like a CSV file
+// May use with type assertion
+type Rocket = {[property: string]: string};
+const rocket: Rocket = {
+	name: 'Falcon 9',
+	variant: 'v1.0',
+	thrust: '4,940 kN',
+};
+const rocketFake: Rocket = {
+	name: 'Falcon',
+	size: 'XXL',
+	brand: 'X'
+}
+
+	

@@ -16,5 +16,7 @@ const checkedFetch: typeof fetch = async (input, init) => {
 	return response;
 };
 
+// const HTTPFunc = (url: string, opts: Options) => Promise<Response>;
+
 console.log(checkedFetch('https://www.google.com/'));
 
